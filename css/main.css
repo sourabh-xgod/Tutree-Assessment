@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+body .default-hr {
+  border-style: dotted none none none;
+  color: grey;
+  border-width: thick;
+}
+
+#header {
+  height: 100%;
+}
+
+#header nav .container-fluid .navbar-collapse .nav-link {
+  font-size: 1.1em;
+  font-weight: bolder;
+  margin: 0 0.5rem;
+  position: relative;
+}
+
+#header nav .container-fluid .navbar-collapse .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #f9db62;
+  border-width: thick;
+  -webkit-box-shadow: 0 0 10px #f9db62, inset 0 0 20px #f9db62;
+          box-shadow: 0 0 10px #f9db62, inset 0 0 20px #f9db62;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#header nav .container-fluid .navbar-collapse .nav-link:hover::before {
+  width: 100%;
+}
+
+#header main .search-div {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/search-wallpaper.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/search-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#header main .search-div .container .landing-text {
+  color: #fff;
+}
+
+#header main .search-div .container .awesome-hr-1 {
+  background-color: #eb311f;
+  border-width: thick;
+  -webkit-box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+          box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+  width: 50%;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+#header main .search-div .container .row .awesearchbtn .awesome-button a {
+  color: #ef2917;
+  border: 0.5px solid #fff;
+  display: inline-block;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 10px 0 3px white;
+          box-shadow: 10px 0 3px white;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#header main .search-div .container .row .awesearchbtn .awesome-button a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: repeating-linear-gradient(135deg, rgba(244, 244, 244, 0.06) 0px, rgba(244, 244, 244, 0.06) 46px, rgba(92, 92, 92, 0.06) 46px, rgba(92, 92, 92, 0.06) 79px, rgba(208, 208, 208, 0.06) 79px, rgba(208, 208, 208, 0.06) 119px, rgba(87, 87, 87, 0.06) 119px, rgba(87, 87, 87, 0.06) 162px, rgba(8, 8, 8, 0.06) 162px, rgba(8, 8, 8, 0.06) 187px, rgba(206, 206, 206, 0.06) 187px, rgba(206, 206, 206, 0.06) 211px, rgba(183, 183, 183, 0.06) 211px, rgba(183, 183, 183, 0.06) 247px, rgba(21, 21, 21, 0.06) 247px, rgba(21, 21, 21, 0.06) 288px), repeating-linear-gradient(135deg, rgba(148, 148, 148, 0.06) 0px, rgba(148, 148, 148, 0.06) 28px, rgba(104, 104, 104, 0.06) 28px, rgba(104, 104, 104, 0.06) 58px, rgba(236, 236, 236, 0.06) 58px, rgba(236, 236, 236, 0.06) 101px, rgba(245, 245, 245, 0.06) 101px, rgba(245, 245, 245, 0.06) 128px, rgba(104, 104, 104, 0.06) 128px, rgba(104, 104, 104, 0.06) 167px, rgba(90, 90, 90, 0.06) 167px, rgba(90, 90, 90, 0.06) 216px, rgba(31, 31, 31, 0.06) 216px, rgba(31, 31, 31, 0.06) 260px, rgba(25, 25, 25, 0.06) 260px, rgba(25, 25, 25, 0.06) 305px), repeating-linear-gradient(135deg, rgba(221, 221, 221, 0.06) 0px, rgba(221, 221, 221, 0.06) 20px, rgba(154, 154, 154, 0.06) 20px, rgba(154, 154, 154, 0.06) 66px, rgba(60, 60, 60, 0.06) 66px, rgba(60, 60, 60, 0.06) 88px, rgba(170, 170, 170, 0.06) 88px, rgba(170, 170, 170, 0.06) 115px, rgba(241, 241, 241, 0.06) 115px, rgba(241, 241, 241, 0.06) 131px, rgba(99, 99, 99, 0.06) 131px, rgba(99, 99, 99, 0.06) 147px, rgba(203, 203, 203, 0.06) 147px, rgba(203, 203, 203, 0.06) 193px, rgba(83, 83, 83, 0.06) 193px, rgba(83, 83, 83, 0.06) 204px), -webkit-gradient(linear, left top, right top, from(#f8081f), to(#58273e));
+  background-image: repeating-linear-gradient(135deg, rgba(244, 244, 244, 0.06) 0px, rgba(244, 244, 244, 0.06) 46px, rgba(92, 92, 92, 0.06) 46px, rgba(92, 92, 92, 0.06) 79px, rgba(208, 208, 208, 0.06) 79px, rgba(208, 208, 208, 0.06) 119px, rgba(87, 87, 87, 0.06) 119px, rgba(87, 87, 87, 0.06) 162px, rgba(8, 8, 8, 0.06) 162px, rgba(8, 8, 8, 0.06) 187px, rgba(206, 206, 206, 0.06) 187px, rgba(206, 206, 206, 0.06) 211px, rgba(183, 183, 183, 0.06) 211px, rgba(183, 183, 183, 0.06) 247px, rgba(21, 21, 21, 0.06) 247px, rgba(21, 21, 21, 0.06) 288px), repeating-linear-gradient(135deg, rgba(148, 148, 148, 0.06) 0px, rgba(148, 148, 148, 0.06) 28px, rgba(104, 104, 104, 0.06) 28px, rgba(104, 104, 104, 0.06) 58px, rgba(236, 236, 236, 0.06) 58px, rgba(236, 236, 236, 0.06) 101px, rgba(245, 245, 245, 0.06) 101px, rgba(245, 245, 245, 0.06) 128px, rgba(104, 104, 104, 0.06) 128px, rgba(104, 104, 104, 0.06) 167px, rgba(90, 90, 90, 0.06) 167px, rgba(90, 90, 90, 0.06) 216px, rgba(31, 31, 31, 0.06) 216px, rgba(31, 31, 31, 0.06) 260px, rgba(25, 25, 25, 0.06) 260px, rgba(25, 25, 25, 0.06) 305px), repeating-linear-gradient(135deg, rgba(221, 221, 221, 0.06) 0px, rgba(221, 221, 221, 0.06) 20px, rgba(154, 154, 154, 0.06) 20px, rgba(154, 154, 154, 0.06) 66px, rgba(60, 60, 60, 0.06) 66px, rgba(60, 60, 60, 0.06) 88px, rgba(170, 170, 170, 0.06) 88px, rgba(170, 170, 170, 0.06) 115px, rgba(241, 241, 241, 0.06) 115px, rgba(241, 241, 241, 0.06) 131px, rgba(99, 99, 99, 0.06) 131px, rgba(99, 99, 99, 0.06) 147px, rgba(203, 203, 203, 0.06) 147px, rgba(203, 203, 203, 0.06) 193px, rgba(83, 83, 83, 0.06) 193px, rgba(83, 83, 83, 0.06) 204px), linear-gradient(90deg, #f8081f, #58273e);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#header main .search-div .container .row .awesearchbtn .awesome-button a i {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#header main .search-div .container .row .awesearchbtn .awesome-button a:hover {
+  color: #fff;
+  border: 0.5px solid #000;
+}
+
+#header main .search-div .container .row .awesearchbtn .awesome-button a:hover i {
+  color: #e0c56e;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#header main .search-div .container .row .awesearchbtn .awesome-button a:hover .left-icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#header main .search-div .container .row .awesearchbtn .awesome-button a:hover .right-icon {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#header main .search-div .container .row .awesearchbtn .awesome-button a:hover::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#header main .main-div .row .filter-column .collapsible {
+  border-radius: 30px;
+  background-color: #00cc29;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+#header main .main-div .row .filter-column .active,
+#header main .main-div .row .filter-column .collapsible:hover {
+  background-color: #85ff9e;
+}
+
+#header main .main-div .row .filter-column .content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#header main .main-div .row .filter-column .collapsible:after {
+  content: "\02795";
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+#header main .main-div .row .filter-column .active:after {
+  content: "\2796";
+}
+
+#header main .main-div .row .main-content-column .main-content #services .services-p {
+  font-size: 1.1rem;
+}
+
+#header main .main-div .row .main-content-column .main-content #services .container .row .card {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+#header main .main-div .row .main-content-column .main-content #services .container .row .card:hover {
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+}
+
+#header main .main-div .row .main-content-column .main-content #services .container .row .card .card-body {
+  font-size: 0.7rem;
+}
+
+#header main .main-div .row .side-content-column .side-content .side-banner {
+  background-image: url(../images/7e8eba8818971329dd1fdbaa8480b869.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback-bar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+#footer .container .footer-content .social a {
+  color: black;
+}
+
+#footer .container .footer-content .social a .facebook,
+#footer .container .footer-content .social a .instagram,
+#footer .container .footer-content .social a .github,
+#footer .container .footer-content .social a .twitter,
+#footer .container .footer-content .social a .phone {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#footer .container .footer-content .social a .facebook:hover,
+#footer .container .footer-content .social a .instagram:hover,
+#footer .container .footer-content .social a .github:hover,
+#footer .container .footer-content .social a .twitter:hover,
+#footer .container .footer-content .social a .phone:hover {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+#footer .container .footer-content .social a .facebook:hover {
+  color: #007fff;
+}
+
+#footer .container .footer-content .social a .instagram:hover {
+  color: #ee4266;
+}
+
+#footer .container .footer-content .social a .github:hover {
+  color: #ffd23f;
+}
+
+#footer .container .footer-content .social a .twitter:hover {
+  color: #08a4bd;
+}
+
+#footer .container .footer-content .social a .phone:hover {
+  color: #05f140;
+}

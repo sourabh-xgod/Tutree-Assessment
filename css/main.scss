@@ -1,0 +1,364 @@
+// ***** GLOBAL Start *****
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  //font-family: "Kufam", cursive;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  .default-hr {
+    border-style: dotted none none none;
+    color: grey;
+    border-width: thick;
+  }
+}
+
+//
+// ***** GLOBAL End *****
+//
+//*****************************************************************************
+//
+//***** Navbar End *****
+//
+//*****************************************************************************
+#header {
+  height: 100%;
+  nav {
+    .container-fluid {
+      .navbar-collapse {
+        .nav-link {
+          font-size: 1.1em;
+          font-weight: bolder;
+          margin: 0 0.5rem;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #f9db62;
+            border-width: thick;
+            box-shadow: 0 0 10px #f9db62, inset 0 0 20px #f9db62;
+            transition: all 0.2s linear;
+          }
+
+          &:hover::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .search-div {
+      background-image: linear-gradient(rgba(#000, 0.5), rgba(#000, 0.5)),
+        url(../images/search-wallpaper.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      .container {
+        .landing-text {
+          color: #fff;
+        }
+
+        .awesome-hr-1 {
+          background-color: #eb311f;
+          border-width: thick;
+          box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+          width: 50%;
+          margin: 2rem 0;
+          border-radius: 10px;
+        }
+
+        .row {
+          .awesearchbtn {
+            .awesome-button {
+              //margin: 0.5rem 0;
+              a {
+                color: #ef2917;
+                border: 0.5px solid #fff;
+                display: inline-block;
+                font-size: 1.1rem;
+                box-shadow: 10px 0 3px white;
+                text-decoration: none;
+                border-radius: 30px;
+                padding: 0.5rem 2rem;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                transition: all 0.3s;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  //border-radius: 30px;
+                  left: 0;
+                  top: 0;
+
+                  background-image: repeating-linear-gradient(
+                      135deg,
+                      rgba(244, 244, 244, 0.06) 0px,
+                      rgba(244, 244, 244, 0.06) 46px,
+                      rgba(92, 92, 92, 0.06) 46px,
+                      rgba(92, 92, 92, 0.06) 79px,
+                      rgba(208, 208, 208, 0.06) 79px,
+                      rgba(208, 208, 208, 0.06) 119px,
+                      rgba(87, 87, 87, 0.06) 119px,
+                      rgba(87, 87, 87, 0.06) 162px,
+                      rgba(8, 8, 8, 0.06) 162px,
+                      rgba(8, 8, 8, 0.06) 187px,
+                      rgba(206, 206, 206, 0.06) 187px,
+                      rgba(206, 206, 206, 0.06) 211px,
+                      rgba(183, 183, 183, 0.06) 211px,
+                      rgba(183, 183, 183, 0.06) 247px,
+                      rgba(21, 21, 21, 0.06) 247px,
+                      rgba(21, 21, 21, 0.06) 288px
+                    ),
+                    repeating-linear-gradient(
+                      135deg,
+                      rgba(148, 148, 148, 0.06) 0px,
+                      rgba(148, 148, 148, 0.06) 28px,
+                      rgba(104, 104, 104, 0.06) 28px,
+                      rgba(104, 104, 104, 0.06) 58px,
+                      rgba(236, 236, 236, 0.06) 58px,
+                      rgba(236, 236, 236, 0.06) 101px,
+                      rgba(245, 245, 245, 0.06) 101px,
+                      rgba(245, 245, 245, 0.06) 128px,
+                      rgba(104, 104, 104, 0.06) 128px,
+                      rgba(104, 104, 104, 0.06) 167px,
+                      rgba(90, 90, 90, 0.06) 167px,
+                      rgba(90, 90, 90, 0.06) 216px,
+                      rgba(31, 31, 31, 0.06) 216px,
+                      rgba(31, 31, 31, 0.06) 260px,
+                      rgba(25, 25, 25, 0.06) 260px,
+                      rgba(25, 25, 25, 0.06) 305px
+                    ),
+                    repeating-linear-gradient(
+                      135deg,
+                      rgba(221, 221, 221, 0.06) 0px,
+                      rgba(221, 221, 221, 0.06) 20px,
+                      rgba(154, 154, 154, 0.06) 20px,
+                      rgba(154, 154, 154, 0.06) 66px,
+                      rgba(60, 60, 60, 0.06) 66px,
+                      rgba(60, 60, 60, 0.06) 88px,
+                      rgba(170, 170, 170, 0.06) 88px,
+                      rgba(170, 170, 170, 0.06) 115px,
+                      rgba(241, 241, 241, 0.06) 115px,
+                      rgba(241, 241, 241, 0.06) 131px,
+                      rgba(99, 99, 99, 0.06) 131px,
+                      rgba(99, 99, 99, 0.06) 147px,
+                      rgba(203, 203, 203, 0.06) 147px,
+                      rgba(203, 203, 203, 0.06) 193px,
+                      rgba(83, 83, 83, 0.06) 193px,
+                      rgba(83, 83, 83, 0.06) 204px
+                    ),
+                    linear-gradient(90deg, rgb(248, 8, 31), rgb(88, 39, 62));
+                  //
+                  //
+                  width: 100%;
+                  height: 100%;
+                  z-index: -1;
+                  transform: rotate(-90deg);
+                  transform-origin: bottom left;
+                  transition: all 0.3s;
+                }
+                i {
+                  transition: all 0.5s;
+                }
+                &:hover {
+                  color: #fff;
+                  border: 0.5px solid #000;
+                  i {
+                    color: #e0c56e;
+                    transition: all 0.5s;
+                  }
+                  .left-icon {
+                    transform: rotate(90deg);
+                  }
+                  .right-icon {
+                    transform: rotate(-90deg);
+                  }
+                }
+              }
+              a:hover::before {
+                transform: rotate(0deg);
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-div {
+      .row {
+        .filter-column {
+          // Style the button that is used to open and close the collapsible content
+          .collapsible {
+            border-radius: 30px;
+            background-color: #00cc29;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+          }
+
+          // Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)
+          .active,
+          .collapsible:hover {
+            background-color: #85ff9e;
+          }
+
+          // Style the collapsible content. Note: hidden by default
+          .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+          }
+
+          // Icons
+          .collapsible:after {
+            content: "\02795"; // Unicode character for "plus" sign (+)
+            font-size: 13px;
+            color: white;
+            float: right;
+            margin-left: 5px;
+          }
+          .active:after {
+            content: "\2796"; // Unicode character for "minus" sign (-)
+          }
+        }
+
+        .main-content-column {
+          .main-content {
+            //***** Services Start *****
+            #services {
+              // .our-services-title {
+              //   font-size: 2rem;
+              // }
+              .services-p {
+                font-size: 1.1rem;
+              }
+              .container {
+                .row {
+                  .card {
+                    //width: 80%;
+                    transition: 0.7s ease;
+                    &:hover {
+                      transform: scaleY(1.1);
+                      box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+                      -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+                      -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+                    }
+                    .card-body {
+                      font-size: 0.7rem;
+                    }
+                  }
+                }
+              }
+            }
+
+            //
+            //***** Services End *****
+            //
+          }
+        }
+
+        .side-content-column {
+          .side-content {
+            .side-banner {
+              background-image: url(../images/7e8eba8818971329dd1fdbaa8480b869.jpg);
+              width: 100%;
+              height: 100vh;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//
+//
+
+.feedback-bar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: rotate(-90deg);
+  transform-origin: top;
+  // .fb-button {
+
+  // }
+}
+
+//
+// ***** Footer Start *****
+#footer {
+  .container {
+    .footer-content {
+      .social {
+        a {
+          color: black;
+          .facebook,
+          .instagram,
+          .github,
+          .twitter,
+          .phone {
+            transition: 0.5s ease;
+            &:hover {
+              transform: translateY(-20%);
+            }
+          }
+          .facebook {
+            &:hover {
+              color: #007fff;
+            }
+          }
+          .instagram {
+            &:hover {
+              color: #ee4266;
+            }
+          }
+          .github {
+            &:hover {
+              color: #ffd23f;
+            }
+          }
+          .twitter {
+            &:hover {
+              color: #08a4bd;
+            }
+          }
+          .phone {
+            &:hover {
+              color: #05f140;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+//***** Footer End *****
+//
